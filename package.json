@@ -24,6 +24,7 @@
     "webpack-cli": "^2.0.14"
   },
   "dependencies": {
+    "bootstrap": "^4.1.0",
     "handsontable": "^0.38.1",
     "jquery": "^3.3.1"
   }

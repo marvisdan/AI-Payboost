@@ -4,14 +4,8 @@ html{
 html, body {
   height: 100%;
 }
-
 .container{
   height: calc(100% - 100px);
-
-}
-.table-container{
-  height: calc(100% - 100px);
-  background: purple;
 }
 body{
   margin: 0;
@@ -35,20 +29,18 @@ body{
     }
   }
 }
-.field-container{
 
+.field-container{
   margin: 20px;
   display: flex;
-  justify-content: flex-end;
-  .search_field {
-    display: block;
+  position: relative;
+  #search_field {
+    display: flex;
     width: 200px;
   }
 }
 .table-container{
-  padding: 20px;
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
   overflow-x: scroll;
   .pagination {
       a{

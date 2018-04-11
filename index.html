@@ -19,19 +19,28 @@
       <a href="">utilisateurs</a>
     </div>
   </div>
-  <div class="container">
-    <div class="field-container">
-      <input id="search_field" type="search" placeholder="Search">
-    </div>
-    <div class="table-container">
-        <div id="first-table"></div>
-        <div class="pagination">
-            <a href="#1">1</a>
-            <a href="#2">2</a>
-            <a href="#3">3</a>
-            <a href="#4">4</a>
-            <a href="#5">5</a>
-        </div>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="field-container col-md-3 offset-md-9">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Recherche</span>
+                </div>  
+                <input id="search_field" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+          </div>
+          <div class="col-md-12 table-container">
+              <div class="col-md-12" id="global-table"></div>
+          </div>
+          <div class="col-md-12">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#1">1</a></li>
+              <li class="page-item"><a class="page-link" href="#2">2</a></li>
+              <li class="page-item"><a class="page-link" href="#3">3</a></li>
+              <li class="page-item"><a class="page-link" href="#4">4</a></li>
+              <li class="page-item"><a class="page-link" href="#5">5</a></li>
+            </ul>
+           </div>
     </div>
   </div>
   <script src="node_modules/handsontable/dist/handsontable.full.min.js"></script>
