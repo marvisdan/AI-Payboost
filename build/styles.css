@@ -1,0 +1,55 @@
+html {
+  overflow: hidden; }
+
+html, body {
+  height: 100%; }
+
+.container {
+  height: calc(100% - 100px); }
+
+.table-container {
+  height: calc(100% - 100px);
+  background: purple; }
+
+body {
+  margin: 0; }
+
+.header {
+  background-color: #234da1;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px; }
+  .header img {
+    width: 200px;
+    height: auto; }
+  .header .navigation a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none; }
+
+.field-container {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end; }
+  .field-container .search_field {
+    display: block;
+    width: 200px; }
+
+.table-container {
+  padding: 20px;
+  width: 95%;
+  margin: 0 auto;
+  overflow-x: scroll; }
+  .table-container .pagination a {
+    border: 1px solid lightgray;
+    padding: 5px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10px;
+    margin: 15px 15px 0 0;
+    color: #000; }
+
+/*# sourceMappingURL=styles.css.map*/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" media="screen" href="./build/styles.css">
+  <link rel="stylesheet" media="screen" href="node_modules/handsontable/dist/handsontable.full.min.css">
+  <title>Fastoche-AI</title>
+</head>
+<body>
+  <div class="header">
+    <img src="./app/assets/images/logo_blanc.png" />
+    <div class="navigation">
+      <a href="">Controle Global </a>
+      <a href="">Recatégorisation</a>
+      <a href="">Validation des actions</a>
+      <a href="">utilisateurs</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="field-container">
+      <input id="search_field" type="search" placeholder="Search">
+    </div>
+    <div class="table-container">
+        <div id="first-table"></div>
+        <div class="pagination">
+            <a href="#1">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#4">4</a>
+            <a href="#5">5</a>
+        </div>
+    </div>
+  </div>
+  <script src="node_modules/handsontable/dist/handsontable.full.min.js"></script>
+  <script src="build/vendors.bundle.js"></script>
+  <script src="build/index.bundle.js"></script>
+</body>
+</html>
