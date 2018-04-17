@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    meta(name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no")
+    meta(name="apple-touch-fullscreen" content="YES")
+    meta(name="format-detection" content="telephone=no")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-touch-fullscreen" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black")
+    script(src="../build/index.bundle.js")
+    link(rel='stylesheet', href='../build/styles.css')
+  body
+  include header
+  block content
+    
+    .container-fluid
+      h3 Cluster table
+      div.field-container.col-md-3.offset-md-9
+        input#search_field( class='form-control' type='text' aria-label="Small" checked=true aria-describedby="inputGroup-sizing-sm")
+      #cluster-table
+      ul.pagination
+        li.page-item: a.page-link(href='#1') 1
+        li.page-item: a.page-link(href='#2') 2
+        li.page-item: a.page-link(href='#3') 3
+        li.page-item: a.page-link(href='#4') 4
+        li.page-item: a.page-link(href='#5') 5
+        

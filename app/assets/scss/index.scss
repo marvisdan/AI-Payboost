@@ -1,3 +1,4 @@
+@import 'custom-handsontable.scss';
 html{ 
   overflow: hidden;
 }
@@ -27,13 +28,17 @@ body{
       color: white;
       text-decoration: none;
     }
+    a:hover{
+      text-decoration: underline;
+    }
   }
 }
-
 .field-container{
-  margin: 20px;
   display: flex;
+  justify-content: flex-end;
   position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
   #search_field {
     display: flex;
     width: 200px;
@@ -41,17 +46,11 @@ body{
 }
 .table-container{
   width: 100%;
-  overflow-x: scroll;
-  .pagination {
-      a{
-        border: 1px solid lightgray;
-        padding: 5px;
-        display: inline-flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 10px;
-        margin: 15px 15px 0 0;
-        color: #000;
-      }
+}
+.pagination {
+  a{
+    color: #000;
+    font-size: 15px;
   }
 }
+

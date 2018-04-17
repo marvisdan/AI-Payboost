@@ -1,0 +1,25 @@
+/* Every odd row */
+.ht_master tr:nth-of-type(odd) > td {
+  //background-color: #fff;
+}
+
+/* Every even row */
+.ht_master tr:nth-of-type(even) > td {
+  //background-color:rgb(230, 230, 230);
+}
+
+/* Selected row  */
+/* Add a custom class name in the configuration: currentRowClassName: "foo"; */
+.ht_master tr.foo > td {
+  background-color: blue;
+}
+
+.ht_master td {
+  font-size: 12px;
+}
+.handsontable th {
+  font-size: 14px;
+}
+.handsontable tr td:nth-child(2), .handsontable tr td:last-child{
+  text-align: center;
+}
